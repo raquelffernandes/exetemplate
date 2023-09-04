@@ -1,0 +1,38 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg sticky-top p-4 shadow p-2 navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img src="{% static './img/letter-a (2).png' %}" alt="" width="50" height="50" class="d-inline-block align-text-top">
+      <a class="navbar-brand text-uppercase me-5" href="../">mani
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ps-3" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% static '../index.html' %}">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Camisas</a></li>
+              <li><a class="dropdown-item" href="#">Calças</a></li>
+              <li><a class="dropdown-item" href="#">Sapatos</a></li>
+              <li><a class="dropdown-item" href="#">Acessórios</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="mx-auto">
+        <button type="button" class="btn btn-outline-warning">Cadastrar</button>
+        <button type="button" class="btn btn-success">Entrar</button>
+      </div>
+    </div>
+</nav>
